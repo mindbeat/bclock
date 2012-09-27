@@ -56,7 +56,7 @@ void print_dpll_mpu(Dpll_mpu* dpll_mpu)
 	double adplls = (1/((double)dpll_mpu-> N_divider+1))* \
 	(double) dpll_mpu-> M_multiplier * CLKINP * (1/(double)dpll_mpu-> M2_divider);
 	
-	printf("CLKINP = 24\nN_divider = %d\nM_multiplier = %d\nM2_divider = %d\n\nMPU frequency = %.2f\n", \
+	printf("CLKINP = 24\nN_divider = %d\nM_multiplier = %d\nM2_divider = %d\n\nMPU frequency = %.2f Mhz\n", \
 	dpll_mpu-> N_divider, dpll_mpu-> M_multiplier, dpll_mpu-> M2_divider, adplls);
 }
 
